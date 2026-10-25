@@ -1,1 +1,198 @@
-<h1>HOLA MUNDO</h1>
+<!DOCTYPE1 html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un blog dedicado a explorar la belleza de la naturaleza, la biodiversidad y la conservación ambiental.">
+    <title>Ecos Verdes | Blog de Naturaleza</title>
+    
+    <!-- Estilos básicos CSS integrados para mejor presentación -->
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #f1f8e9;
+            --text-color: #2c3e50;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Encabezado y Navegación */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenedor Principal con Layout Flexible */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        /* Artículos del Blog */
+        article {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+    <header>
+        <h1>Ecos Verdes</h1>
+        <p>Descubriendo la magia y los secretos de nuestro planeta</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL (LAYOUT) -->
+    <div class="container">
+        
+        <!-- SECCIÓN DE ARTÍCULOS -->
+        <main id="articulos">
+            
+            <article>
+                <header>
+                    <h2>La Importancia de los Bosques Primarios</h2>
+                    <p class="meta">Publicado el <time datetime="2026-03-29">29 de Marzo de 2026</time> por <strong>Lucía Morales</strong></p>
+                </header>
+                
+                <img src="https://picsum.photos/800/400?nature=1" alt="Fotografía de un bosque frondoso con luz solar filtrándose entre los árboles">
+                
+                <p>Los bosques primarios representan los ecosistemas más antiguos e intactos del planeta. A diferencia de los bosques secundarios replantados por el ser humano, estas áreas albergan complejos entramados de biodiversidad que han evolucionado libre de intervenciones drásticas durante miles de años.</p>
+                
+                <p>Proteger estos espacios no solo salvaguarda a miles de especies de flora y fauna en peligro, sino que también garantiza la estabilidad del ciclo del agua y el almacenamiento masivo de carbono.</p>
+                
+                <a href="#">Leer más...</a>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Pequeños Polinizadores, Grandes Impactos</h2>
+                    <p class="meta">Publicado el <time datetime="2026-03-20">20 de Marzo de 2026</time> por <strong>Carlos Ruiz</strong></p>
+                </header>
+                
+                <img src="https://picsum.photos/800/400?nature=2" alt="Abeja posada sobre una flor silvestre amarilla">
+                
+                <p>Abejas, mariposas, colibríes y murciélagos desempeñan un rol crítico en nuestros ecosistemas. Más del 75% de los cultivos alimentarios del mundo dependen, en cierta medida, de la polinización animal.</p>
+                
+                <p>Crear jardines con plantas nativas en nuestros hogares es un paso sencillo pero significativo para ofrecerles refugio y alimento.</p>
+                
+                <a href="#">Leer más...</a>
+            </article>
+
+        </main>
+
+        <!-- BARRA LATERAL (SIDEBAR) -->
+        <aside>
+            <section>
+                <h3>Sobre el Blog</h3>
+                <p>Ecos Verdes es un espacio divulgativo para aprender a conectar con el medio ambiente y promover un estilo de vida consciente.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Flora y Fauna</a></li>
+                    <li><a href="#">Conservación</a></li>
+                    <li><a href="#">Fotografía de Naturaleza</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </section>
+        </aside>
+
+    </div>
+
+    <!-- 3. PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Ecos Verdes. Todos los derechos reservados.</p>
+        <p><small>Diseñado para promover el cuidado de nuestro planeta.</small></p>
+    </footer>
+
+</body>
+</html>
